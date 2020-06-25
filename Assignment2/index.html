@@ -49,7 +49,7 @@
           {{ item.quantity }} of {{ item.name }}
       </li>
      </ul>
-     <div ng-if="bought.message" class="emptyMessage">{{bought.message}}</div>
+     <div ng-if="bought.items.length==0" class="emptyMessage ng-scope">Nothing bought yet.</div>
     </div>
   </div>
 </div>
