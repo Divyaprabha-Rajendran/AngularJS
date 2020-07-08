@@ -1,0 +1,8 @@
+<!--<div>Categories</div>
+<div>{{mainList.items}}ng-click="mainList.somefn($index)"</div>-->
+
+<ul>
+  <li ng-repeat="item in mainList.items">
+   <a ui-sref="list({itemId: item.short_name})"> {{ item.short_name }}</a> - {{ item.name }}
+  </li>
+</ul>
